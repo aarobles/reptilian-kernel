@@ -1068,6 +1068,8 @@ static int __ref kernel_init(void *unused)
 	system_state = SYSTEM_RUNNING;
 	numa_default_policy();
 
+	pr_info("##### Armando Robles (UFID: 5108-9911) daemon initiated on external thread #####\n");
+
 	rcu_end_inkernel_boot();
 
 	if (ramdisk_execute_command) {
